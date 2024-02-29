@@ -68,9 +68,9 @@ def stock_data_to_dict(url):
 @app.route('/getsector/<sector>')
 def getsector(sector):
     urls = sectors_url[sector]
-    if isinstance(urls, __builtins__.str):  
+    if isinstance(urls, str):  
         data = stock_data_to_dict(urls)
-    elif isinstance(urls, __builtins__.list):  
+    elif isinstance(urls, list):  
         all_data = []
         for url in urls:
             all_data.extend(stock_data_to_dict(url))
