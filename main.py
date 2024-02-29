@@ -5,18 +5,18 @@ from bs4 import BeautifulSoup
 import numpy as np
 import os
 
-load_dotenv()
+
 
 app = Flask(__name__)
 
-domain = os.environ.get('domain')
+domain = 'http://www.moneycontrol.com/stocks/sectors'
 sectors_url = {
     'pharma' : f'pharmaceuticals.html',
     'chem' : f'{domain}/chemicals.html',
     'cs' : f'{domain}/computers-software.html',
     'fert' : f'{domain}/fertilisers.html',
-    'petrochem' : f'https://www.moneycontrol.com/stocks/sectors/petrochemicals.html',
-    'trading' : f'https://www.moneycontrol.com/stocks/sectors/trading.html',
+    'petrochem' : f'{domain}/petrochemicals.html',
+    'trading' : f'{domain}/trading.html',
     'cement' : [f'{domain}/cement-major.html', f'{domain}/cement-mini.html'],
     'banks' : [f'{domain}/banks-private-sector.html', f'{domain}/banks-public-sector.html'],
     'finance' : [f'{domain}/finance-general.html',f'{domain}/finance-housing.html',f'{domain}/finance-investments.html',f'{domain}/finance-leasing-hire-purchase.html',f'{domain}/finance-term-lending-institutions.html'],
