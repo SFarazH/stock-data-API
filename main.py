@@ -4,8 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import numpy as np
 import os
-
-
+from sectors import sectors_url
 
 app = Flask(__name__)
 
