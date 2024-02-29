@@ -1,6 +1,6 @@
 domain = 'http://www.moneycontrol.com/stocks/sectors'
 sectors_url = {
-    'pharma' : f'pharmaceuticals.html',
+    'pharma' : f'{domain}pharmaceuticals.html',
     'chem' : f'{domain}/chemicals.html',
     'cs' : f'{domain}/computers-software.html',
     'fert' : f'{domain}/fertilisers.html',
